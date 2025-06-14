@@ -1,0 +1,115 @@
+/*
+ * public/css/style.css
+ * Global stylesheet for the Supermarket POS system.
+ * Contains common styles for typography, links, and general layout elements
+ * that are shared across various parts of the application (e.g., login page,
+ * or future public-facing pages).
+ */
+
+/* General Body Styling */
+body {
+    font-family: 'Inter', sans-serif; /* Modern font throughout the application */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #343a40; /* Dark gray for general text */
+    background-color: #f0f2f5; /* Light gray background */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #212529; /* Darker color for headings */
+    margin-bottom: 0.75rem;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Links */
+a {
+    color: #007bff; /* Standard Bootstrap blue for links */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Buttons (if not using Bootstrap's default button styles, or for custom ones) */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* Example custom button style if needed (e.g., for accent actions) */
+.btn-accent {
+    background-color: #FFD700; /* Gold accent color */
+    border-color: #FFD700;
+    color: #333; /* Dark text for contrast on gold */
+}
+
+.btn-accent:hover {
+    background-color: #e0b400; /* Darker gold on hover */
+    border-color: #e0b400;
+    color: #333;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+}
+
+/* Form Controls (if overriding Bootstrap's defaults) */
+.form-control,
+.form-select {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #e0b400; /* Gold focus */
+    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25); /* Light gold glow */
+}
+
+/* Card-like containers (for general use outside specific dashboards) */
+.card-base {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: none;
+    padding: 1.5rem;
+}
+
+/* Utility classes (can be expanded) */
+.text-gold {
+    color: #FFD700 !important;
+}
+
+.bg-gold {
+    background-color: #FFD700 !important;
+}
+
+/* Responsive considerations */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Basic container for centering content if needed */
+.main-container {
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
